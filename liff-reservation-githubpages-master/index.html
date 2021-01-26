@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>入電報告</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+  <form>
+  <div class="Form">
+    <div class="Form-Item" data-toggle="buttons">
+      <label class="Form-Btn">
+        <input type="radio" name="sub_type" value="入電" autocomplete="off">入電
+      </label>
+      <label class="Form-Btn">
+        <input type="radio" name="sub_type" value="来客" autocomplete="off">来客
+      </label>
+  　</div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>会社名
+      </p>
+      <input type="text" name="camp_name" class="Form-Item-Input" placeholder="例）株式会社〇〇">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>担当者</p>
+      <input type="text" name="par_name" class="Form-Item-Input" placeholder="例）山田太郎">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+      <input type="text" name="tele" class="Form-Item-Input" placeholder="例）000-0000-0000">
+    </div>
+    <!-- <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+      <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+    </div> -->
+    <div class="Form-Item">
+      <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+      <textarea id="target" name="textbox" class="Form-Item-Textarea"></textarea>
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label">備考</p>
+      <input type="text" name="subtext" class="Form-Item-Input" placeholder="〇〇時までは電話対応が不可.etc">
+    </div>
+    <input type="submit" class="Form-Btn" value="送信する">
+  </div>
+  </form>
+      <!-- <script src="liff.js"></script> -->
+      <script src="index.js"></script>
+    
+</body>
+</html>
