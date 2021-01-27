@@ -1,8 +1,8 @@
 $(function () {
     // 送信
     $('form').submit(function () {
-        var sub_type = $('input[name="sub_type"]').val();
-        var from = $('input[name="from_p"]').val();
+        var sub_type = $('input:radio[name="sub_type"]:checked').val();
+        var from = $('input:radio[name="from_p"]:checked').val();
         var camp = $('input[name="camp_name"]').val();
         var par = $('input[name="par_name"]').val();
         var tele = $('input[name="tele"]').val();
