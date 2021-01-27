@@ -5,7 +5,7 @@ $(function () {
         var camp = $('input[name="camp_name"]').val();
         var par = $('input[name="par_name"]').val();
         var tele = $('input[name="tele"]').val();
-        var textbox = $('input[name="textbox"]').val();
+        var textbox = $('textarea[name="textbox"]').val();
         var subtext = $('input[name="subtext"]').val();
         // $('#form-name').children().each(function (i, elm) {
         //     names += $(elm).val() + '、';
