@@ -9,14 +9,42 @@
 <body>
   <form>
   <div class="Form">
-    <div class="Form-Item" data-toggle="buttons">
+    <!-- <div class="Form-Item" data-toggle="buttons">
       <label class="Form-Btn">
         <input type="radio" name="sub_type" value="入電" checked="checked">入電
       </label>
       <label class="Form-Btn">
         <input type="radio" name="sub_type" value="来客" >来客
       </label>
-  　</div>
+  　</div> -->
+  <div>
+    <fieldset>
+      <input id="item-1" class="radio-inline__input" type="radio" name="sub_type" value="入電報告" checked="checked"/>
+      <label class="radio-inline__label" for="item-1">
+          入電報告
+      </label>
+      <input id="item-2" class="radio-inline__input" type="radio" name="sub_type" value="来客対応"/>
+      <label class="radio-inline__label" for="item-2">
+          来客対応
+      </label>
+    </fieldset>
+  </div>
+    <div>
+      <fieldset>
+        <input id="item-1" class="radio-inline__input" type="radio" name="from_p" value="社長宛て" checked="checked"/>
+        <label class="radio-inline__label" for="item-1">
+            社長宛て
+        </label>
+        <input id="item-2" class="radio-inline__input" type="radio" name="from_p" value="佐々木さん宛て"/>
+        <label class="radio-inline__label" for="item-2">
+            佐々木さん宛て
+        </label>
+        <input id="item-3" class="radio-inline__input" type="radio" name="from_p" value="福島さん宛て"/>
+        <label class="radio-inline__label" for="item-3">
+            福島さんあて
+        </label>
+      </fieldset>
+    </div>
     <div class="Form-Item">
       <p class="Form-Item-Label">
         <span class="Form-Item-Label-Required">必須</span>会社名
