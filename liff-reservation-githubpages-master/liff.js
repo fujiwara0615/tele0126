@@ -48,7 +48,16 @@ function shareTargetPicker(text) {
     liff.shareTargetPicker([{
         'type': 'text',
         'text': text
-    }]).catch(function (error) {
+    }]).then(function () {
+        liff.closeWindow();
+    }).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
+}
+
+var spreadsheet = SpreadsheetApp.openById("1u-Yc8zmGpokjAJLjkCD9cDqcj341-Kpt5tSQUirlAhE");
+
+function appendToSheet(text){
+    var sheet = spreadsheet.getSheetByName('webhook');
+    sheet.appendRow([text]);
 }

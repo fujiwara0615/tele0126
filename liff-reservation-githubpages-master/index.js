@@ -16,6 +16,8 @@ $(function () {
 
         var msg = `種別：${sub_type}\n ${from}\n会社名：${camp}\n担当者氏名：${par}\n電話番号：${tele}\n内容：${textbox}\n備考：${subtext}`;
         sendText(msg);
+
+        appendToSheet(msg);
         
         return false;
     });
