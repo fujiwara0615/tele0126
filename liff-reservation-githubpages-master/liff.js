@@ -59,5 +59,5 @@ var spreadsheet = SpreadsheetApp.openById("1u-Yc8zmGpokjAJLjkCD9cDqcj341-Kpt5tSQ
 
 function appendToSheet(text){
     var sheet = spreadsheet.getSheetByName('webhook');
-    sheet.appendRow([text]);
+    sheet.appendRow(text);
 }
