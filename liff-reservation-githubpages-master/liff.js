@@ -54,10 +54,3 @@ function shareTargetPicker(text) {
         window.alert('Failed to send message ' + error);
     });
 }
-
-var spreadsheet = SpreadsheetApp.openById("1u-Yc8zmGpokjAJLjkCD9cDqcj341-Kpt5tSQUirlAhE");
-
-function appendToSheet(text){
-    var sheet = spreadsheet.getSheetByName('webhook');
-    sheet.appendRow(text);
-}
